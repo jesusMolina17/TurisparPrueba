@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.turisaplicacion.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+
+        <action
+            android:id="@+id/action_nav_home_to_noticias"
+            app:destination="@id/noticias" />
+        <action
+            android:id="@+id/action_nav_home_to_lugares"
+            app:destination="@id/lugares" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.turisaplicacion.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.turisaplicacion.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/noticias"
+        android:name="com.example.turisaplicacion.Noticias"
+        android:label="fragment_noticias"
+        tools:layout="@layout/fragment_noticias" >
+        <action
+            android:id="@+id/action_noticias_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/lugares"
+        android:name="com.example.turisaplicacion.Lugares"
+        android:label="fragment_lugares"
+        tools:layout="@layout/fragment_lugares" >
+        <action
+            android:id="@+id/action_lugares_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_lugares_to_fragment_AmoValledupar"
+            app:destination="@id/fragment_AmoValledupar" />
+        <action
+            android:id="@+id/action_lugares_to_ecehomo"
+            app:destination="@id/ecehomo" />
+        <action
+            android:id="@+id/action_lugares_to_avenida44"
+            app:destination="@id/avenida44" />
+        <action
+            android:id="@+id/action_lugares_to_catedral"
+            app:destination="@id/catedral" />
+        <action
+            android:id="@+id/action_lugares_to_indio"
+            app:destination="@id/indio" />
+        <action
+            android:id="@+id/action_lugares_to_poporos"
+            app:destination="@id/poporos" />
+        <action
+            android:id="@+id/action_lugares_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_AmoValledupar"
+        android:name="com.example.turisaplicacion.Fragment_AmoValledupar"
+        android:label="fragment__amo_valledupar"
+        tools:layout="@layout/fragment__amo_valledupar" >
+        <action
+            android:id="@+id/action_fragment_AmoValledupar_to_lugares"
+            app:destination="@id/lugares" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecehomo"
+        android:name="com.example.turisaplicacion.ecehomo"
+        android:label="fragment_ecehomo"
+        tools:layout="@layout/fragment_ecehomo" />
+    <fragment
+        android:id="@+id/avenida44"
+        android:name="com.example.turisaplicacion.Avenida44"
+        android:label="fragment_avenida44"
+        tools:layout="@layout/fragment_avenida44" />
+    <fragment
+        android:id="@+id/catedral"
+        android:name="com.example.turisaplicacion.catedral"
+        android:label="fragment_catedral"
+        tools:layout="@layout/fragment_catedral" />
+    <fragment
+        android:id="@+id/indio"
+        android:name="com.example.turisaplicacion.indio"
+        android:label="fragment_indio"
+        tools:layout="@layout/fragment_indio" />
+    <fragment
+        android:id="@+id/poporos"
+        android:name="com.example.turisaplicacion.poporos"
+        android:label="fragment_poporos"
+        tools:layout="@layout/fragment_poporos" />
+    <fragment
+        android:id="@+id/lugares_sitiosinsignias"
+        android:name="com.example.turisaplicacion.lugares_sitiosinsignias"
+        android:label="fragment_lugares_sitiosinsignias"
+        tools:layout="@layout/fragment_lugares_sitiosinsignias" >
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_lugares"
+            app:destination="@id/lugares" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_lugares2"
+            app:destination="@id/lugares" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_musicos"
+            app:destination="@id/glorieta_musicos" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_acordeon"
+            app:destination="@id/glorieta_acordeon" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_gallo"
+            app:destination="@id/glorieta_gallo" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_mulata"
+            app:destination="@id/glorieta_mulata" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_pilonera"
+            app:destination="@id/glorieta_pilonera" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_glorieta_hernando"
+            app:destination="@id/glorieta_hernando" />
+        <action
+            android:id="@+id/action_lugares_sitiosinsignias_to_sitiosinsignia"
+            app:destination="@id/sitiosinsignia" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_musicos"
+        android:name="com.example.turisaplicacion.glorieta_musicos"
+        android:label="fragment_glorieta_musicos"
+        tools:layout="@layout/fragment_glorieta_musicos" >
+        <action
+            android:id="@+id/action_glorieta_musicos_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_acordeon"
+        android:name="com.example.turisaplicacion.glorieta_acordeon"
+        android:label="fragment_glorieta_acordeon"
+        tools:layout="@layout/fragment_glorieta_acordeon" >
+        <action
+            android:id="@+id/action_glorieta_acordeon_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_mulata"
+        android:name="com.example.turisaplicacion.glorieta_mulata"
+        android:label="fragment_glorieta_mulata"
+        tools:layout="@layout/fragment_glorieta_mulata" >
+        <action
+            android:id="@+id/action_glorieta_mulata_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_gallo"
+        android:name="com.example.turisaplicacion.glorieta_gallo"
+        android:label="fragment_glorieta_gallo"
+        tools:layout="@layout/fragment_glorieta_gallo" >
+        <action
+            android:id="@+id/action_glorieta_gallo_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_pilonera"
+        android:name="com.example.turisaplicacion.glorieta_pilonera"
+        android:label="fragment_glorieta_pilonera"
+        tools:layout="@layout/fragment_glorieta_pilonera" >
+        <action
+            android:id="@+id/action_glorieta_pilonera_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/glorieta_hernando"
+        android:name="com.example.turisaplicacion.glorieta_hernando"
+        android:label="fragment_glorieta_hernando"
+        tools:layout="@layout/fragment_glorieta_hernando" >
+        <action
+            android:id="@+id/action_glorieta_hernando_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitiosinsignia"
+        android:name="com.example.turisaplicacion.Sitiosinsignia"
+        android:label="fragment_sitiosinsignia"
+        tools:layout="@layout/fragment_sitiosinsignia" >
+        <action
+            android:id="@+id/action_sitiosinsignia_to_lugares_sitiosinsignias"
+            app:destination="@id/lugares_sitiosinsignias" />
+    </fragment>
+</navigation>
