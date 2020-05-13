@@ -1,6 +1,6 @@
 # TurisparPrueba
-Maestro verifique cual es problema gracias!
-Instalacions el Applicativo TurisApp
+
+Instalacion el Applicativo TurisApp
 1- Permitir la instalación de aplicaciones desde fuera de Play Store
 En la misma ventana de seguridad te da una pista de cómo quitar esta protección. Te informa que el dispositivo se ha configurado para bloquear aplicaciones de orígenes desconocidos y junto a la opción de Cancelar te invita a acceder a los Ajustes para cambiar ese comportamiento.Es en Ajustes > Seguridad donde puedes permitir la instalación de aplicaciones que no sean de Play Store y para ello tan sólo tendrás que activar la opción Orígenes desconocidos. A partir de ese momento cuando vuelvas a abrir un archivo APK verás que te dejará instalarlo sin problemas. Hemos autorizado que poder instalar archivos APK desde cualquier aplicación.
 
